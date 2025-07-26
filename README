@@ -1,7 +1,55 @@
-backend feito com express e mongo db para uma lista de tarefas
+# 📋 Task Manager API
 
-rodar o projeto 
+Uma API RESTful construída com **Node.js**, **Express** e **MongoDB**, desenvolvida para gerenciar tarefas pessoais de forma eficiente — sejam diárias, semanais, mensais ou anuais.
 
-npm i 
+----
 
-nodemon src/index.js
+OBS: escuta na porta 3333
+
+## rodar com docker
+
+docker-compose up --build
+
+---
+
+## 🚀 Tecnologias
+
+- Node.js
+- Express
+- MongoDB + Mongoose
+- Docker + Docker Compose
+- Nodemon
+---
+
+## 📦 Instalação
+
+npm install
+
+## Run
+
+npm start  
+
+##
+
+objeto modelo envio
+
+## Criar tarefa
+
+tipo => POST
+url  => localhost:3333/task
+corpo exemplo
+{
+  "macaddress": "00:1B:44:11:3A:B7",
+  "type": 1,
+  "title": "Finalizar relatório",
+  "description": "Terminar o relatório mensal e enviar para o gestor",
+  "when": "2025-07-27T10:00:00.000Z",
+  "done": false
+}
+
+## buscar tarefa
+
+Tipo => GET
+url => localhost:3333/task/68842c36325ec1f06eaa517d    =>/id
+
+
