@@ -9,5 +9,5 @@ server.use('/task', TaskRoutes);
 
 
 server.listen(3333, ()=>{
-    console.log('API ONLIN')
+    console.log('API ONLIN PORT: 3333')
 })
